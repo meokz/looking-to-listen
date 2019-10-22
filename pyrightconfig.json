@@ -1,0 +1,43 @@
+{
+    "include": [
+        "common/src",
+        "dataset/src",
+        "network/src",
+        "preprocess/src"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__"
+    ],
+    "ignore": [
+        "**/libs"
+    ],
+    "reportTypeshedErrors": false,
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false,
+    "pythonVersion": "3.7",
+    "pythonPlatform": "Linux",
+    "executionEnvironments": [
+        {
+            "root": "common/src"
+        },
+        {
+            "root": "dataset/src",
+            "extraPaths": [
+                "common/src"
+            ]
+        },
+        {
+            "root": "network/src",
+            "extraPaths": [
+                "common/src"
+            ]
+        },
+        {
+            "root": "preprocess/src",
+            "extraPaths": [
+                "common/src"
+            ]
+        }
+    ]
+}

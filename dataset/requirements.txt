@@ -1,0 +1,4 @@
+pandas==0.24.2          # CSV processing
+librosa==0.6.3          # Audio processing
+requests==2.22.0        # HTTP requests
+pydub==0.23.1           # Audio processing

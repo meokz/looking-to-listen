@@ -1,0 +1,38 @@
+version: '2.3'
+services:
+  preprocess:
+    build: ./preprocess
+    runtime: nvidia
+    working_dir: /home
+    volumes:
+      - ./preprocess/src:/home
+      - ./common/src/common:/home/common
+      - ./data:/data
+    environment:
+      - AVSPEECH_DIR=/data/avspeech
+      - AUDIOSET_DIR=/data/audioset
+      - MOVIE_DIR=/data/movie
+      - DATASET_DIR=/data/dataset
+
+  dataset:
+    build: ./dataset
+    working_dir: /home
+    volumes:
+      - ./dataset/src:/home
+      - ./common/src/common:/home/common
+      - ./data:/data
+    environment:
+      - DATASET_DIR=/data/dataset
+
+  network:
+    build: ./network
+    runtime: nvidia
+    working_dir: /home
+    volumes:
+      - ./network/src:/home
+      - ./common/src/common:/home/common
+      - ./data:/data
+    environment:
+      - DATASET_DIR=/data/dataset
+      - MODEL_DIR=/data/model
+      - RESULT_DIR=/data/results

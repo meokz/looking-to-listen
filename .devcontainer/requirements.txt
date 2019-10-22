@@ -1,0 +1,7 @@
+chainer==6.1.0
+librosa
+pandas
+pydub
+opencv-python
+tensorflow
+chainer

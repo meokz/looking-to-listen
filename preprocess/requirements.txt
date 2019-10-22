@@ -1,0 +1,7 @@
+tensorflow-gpu==1.8     # Machine learning frameworks
+face_recognition==1.2.3 # Face recognition
+scipy==1.2.1            # Numerical analysis
+opencv-python==4.1.0.25 # Image processing
+matplotlib==3.0.3       # Graphical plot
+librosa==0.6.3          # Audio processing
+requests==2.22.0        # HTTP requests

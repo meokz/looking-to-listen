@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-pyright.pyright",
+        "editorconfig.editorconfig",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+    ]
+}

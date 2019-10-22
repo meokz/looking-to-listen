@@ -1,0 +1,9 @@
+cupy==6.1.0             # numpy like c modules
+chainer==6.1.0          # Deep Learning Framework
+pandas==0.24.2          # CSV processing
+librosa==0.6.3          # Audio processing
+requests==2.22.0        # HTTP requests
+ideep4py                # Optim CPU for Chainer
+cython
+matplotlib
+seaborn

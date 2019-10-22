@@ -1,0 +1,15 @@
+{
+    "name": "python 3.5",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+    "postCreateCommand": "pip install -r .devcontainer/requirements.txt",
+    "extensions": [
+        "ms-python.python",
+        "ms-pyright.pyright",
+        "editorconfig.editorconfig",
+        "ms-azuretools.vscode-docker"
+    ]
+}
