@@ -45,15 +45,15 @@ Please refer to the following section for additional information such as speech 
 ### Open in bash
 
 ```sh
-$ docker-compose run preprocess bin/bash
+$ docker-compose run preprocess bash
 ```
 
 ```sh
-$ docker-compose run dataset bin/bash
+$ docker-compose run dataset bash
 ```
 
 ```sh
-$ docker-compose run network bin/bash
+$ docker-compose run network bash
 ```
 
 ## Differences from original paper
