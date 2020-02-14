@@ -24,15 +24,15 @@ _set_gpu()
 # model filename
 MODEL_NAME = "2f_2sclean_fc7"
 # input face number
-INPUT_FACE = 2
+INPUT_FACE = 0
 # output mask number
-OUTPUT_MASK = 2
+OUTPUT_MASK = 1
 # mag (only power) :1, complex: 2
 AUDIO_CHANNELS = 2
 VIS_CHANNNEL = 1792
 AUDIO_LEN = 301
 # Size of Fully Connected layer
-FC_ROW = 7
+FC_ROW = 1
 
 
 # ===== Training ===== #
