@@ -5,3 +5,7 @@ opencv-python==4.1.0.25 # Image processing
 matplotlib==3.0.3       # Graphical plot
 librosa==0.6.3          # Audio processing
 requests==2.22.0        # HTTP requests
+
+# Pinning supporting packages to resolve conflict
+llvmlite==0.31.0
+numba==0.47.0
