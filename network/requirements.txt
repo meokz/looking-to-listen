@@ -7,7 +7,5 @@ ideep4py                # Optim CPU for Chainer
 cython
 matplotlib
 seaborn
-
-# Pinning supporting packages to resolve conflict
-llvmlite==0.32.1
-numba==0.49.1
+llvmlite==0.32.1        # Pinning supporting packages to resolve conflict
+numba==0.49.1           # Pinning supporting packages to resolve conflict
