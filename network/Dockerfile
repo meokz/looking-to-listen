@@ -1,6 +1,6 @@
 FROM nvidia/cuda:9.2-cudnn7-devel
 
-RUN apt-get update \
+RUN apt-get update --allow-insecure-repositories \
     && apt-get install -y --no-install-recommends  \
     python3-dev \
     git \
