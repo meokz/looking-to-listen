@@ -1,4 +1,4 @@
-tensorflow-gpu==1.8     # Machine learning frameworks
+tensorflow-gpu==2.5.1     # Machine learning frameworks
 face_recognition==1.2.3 # Face recognition
 scipy==1.2.1            # Numerical analysis
 opencv-python==4.1.0.25 # Image processing
