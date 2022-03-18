@@ -9,7 +9,7 @@ RUN apt-get update --allow-insecure-repositories \
     cmake \
     libblas3 \
     libblas-dev \
-    && curl -kL https://bootstrap.pypa.io/get-pip.py | python3 \
+    && curl -kL https://bootstrap.pypa.io/pip/3.6/get-pip.py | python3 \
     && pip3 install --upgrade pip setuptools
 
 # OpenCV
