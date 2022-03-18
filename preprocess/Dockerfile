@@ -21,7 +21,7 @@ RUN apt-get update \
     build-essential \
     ca-certificates \
     python3-dev \
-    && curl -kL https://bootstrap.pypa.io/get-pip.py | python3 \
+    && curl -kL https://bootstrap.pypa.io/pip/3.5/get-pip.py | python3 \
     && pip3 install --upgrade pip setuptools \
     && pip3 install scikit-build
 
