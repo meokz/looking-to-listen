@@ -60,7 +60,8 @@ RUN mkdir /ffmpeg-tmp \
 RUN mkdir /model \
     && mkdir /model-tmp \
     && cd /model-tmp \
-    && curl gdrive.sh | bash -s https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view?usp=sharing \
+    && curl -Ls --compressed  https://github.com/Akianonymus/gdrive-downloader/raw/master/install.sh | sh -s -- --path /usr/local/bin \
+    && gdl https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55- \
     && unzip 20180402-114759.zip \
     && mv 20180402-114759/20180402-114759.pb /model \
     && cd /home \
