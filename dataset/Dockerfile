@@ -20,7 +20,7 @@ RUN mkdir /ffmpeg-tmp \
 # pip
 RUN mkdir /tmp-pip
 COPY ./requirements.txt /tmp-pip
-RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python3 \
+RUN curl -kL https://bootstrap.pypa.io/pip/3.5/get-pip.py | python3 \
     && pip3 install --upgrade pip setuptools \
     && pip3 install -r /tmp-pip/requirements.txt \
     && rm -rf /tmp-pip
